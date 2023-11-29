@@ -22,7 +22,7 @@ Zhenbo Song *, Zhenyuan Zhang *, [Kaihao Zhang](https://zhangkaihao.github.io/),
 
 **Keywords**: reflection removal, adversarial attack
 
-**Abstracts**: This paper addresses the problem of robust deep single-image reflection removal (SIRR) against adversarial attacks. Current deep learning based SIRR methods have shown significant performance degradation due to unnoticeable distortions and perturbations on input images. For a comprehensive robustness study, we first conduct diverse adversarial attacks specifically for the SIRR problem, i.e. towards different attacking targets and regions. Then we propose a robust SIRR model, which integrates the cross-scale attention module, the multi-scale fusion module, and the adversarial image discriminator. By exploiting the multi-scale mechanism, the model narrows the gap between features from clean and adversarial images. The image discriminator adaptively distinguishes clean or noisy inputs, and thus further gains reliable robustness. Extensive experiments on Nature, SIR<sup>2</sup>, and Real datasets demonstrate that our model remarkably improves the robustness of SIRR across disparate scenes. 
+**Abstracts**: This paper addresses the problem of robust deep single-image reflection removal (SIRR) against adversarial attacks. Current deep learning-based SIRR methods have shown significant performance degradation due to unnoticeable distortions and perturbations on input images. For a comprehensive robustness study, we first conduct diverse adversarial attacks specifically for the SIRR problem, i.e. towards different attacking targets and regions. Then we propose a robust SIRR model, which integrates the cross-scale attention module, the multi-scale fusion module, and the adversarial image discriminator. By exploiting the multi-scale mechanism, the model narrows the gap between features from clean and adversarial images. The image discriminator adaptively distinguishes clean or noisy inputs, and thus further gains reliable robustness. Extensive experiments on Nature, SIR<sup>2</sup>, and Real datasets demonstrate that our model remarkably improves the robustness of SIRR across disparate scenes. 
 
 <img src="assets/pipeline.png"/>
 
@@ -54,7 +54,7 @@ Zhenbo Song *, Zhenyuan Zhang *, [Kaihao Zhang](https://zhangkaihao.github.io/),
 
 ```
 # git clone this repository
-git clone https://
+git clone https://github.com/ZhenboSong/RobustSIRR.git
 cd RobustSIRR
 
 # create new anaconda env
@@ -78,17 +78,17 @@ pip install -r requirements.txt
 - 7,643 cropped images with size 224 × 224 from  [Pascal VOC dataset](http://host.robots.ox.ac.uk/pascal/VOC/) (image ids are provided in VOC2012_224_train_png.txt, you should crop the center region with size 224 x 224 to reproduce our result )
 - 90(89) real-world training images from [Berkeley real dataset](https://github.com/ceciliavision/perceptual-reflection-removal)
 
-:exclamation:Place the processed VOC2012 and real datasets in the `datasets` folder, and name them as `VOC2012` and `real89` respectively. 
+:exclamation: Place the processed VOC2012 and real datasets in the `datasets` folder, and name them `VOC2012` and `real89` respectively. 
 
 :star2:For convenience, you can directly download the prepared training dataset from [ [VOC2012_For_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1Ph4Ig41TUWrPNjHUekQ3Iw?pwd=sirr) `(pwd:sirr)`] and [ [real89_For_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1tMHYUsaTABuDJeu_tbj_5Q?pwd=sirr) `(pwd:sirr)`].
 
 ### Testing Dataset
 
 - 20 real testing images from [Berkeley real dataset](https://github.com/ceciliavision/perceptual-reflection-removal)
-- Three sub-datasets, namely ‘Objects’, ‘Postcard’, ‘Wild’ from [SIR^2 dataset](https://sir2data.github.io/) 
+- Three sub-datasets, namely ‘Objects’, ‘Postcard’, ‘Wild’ from [SIR<sup>2</sup> dataset](https://sir2data.github.io/) 
 - 20 testing images from [Nature](https://drive.google.com/file/d/1YWkm80jWsjX6XwLTHOsa8zK3pSRalyCg/view) 
 
-:exclamation:Place the processed these datasets in the `datasets` folder, and name them as `real20`, `SIR2`, and `nature20` respectively. 
+:exclamation: Place the processed datasets in the `datasets` folder, and name them as `real20`, `SIR2`, and `nature20` respectively. 
 
 :star2:For convenience, you can directly download the prepared testing dataset from [ [TestingDataset_For_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1inDlzc9u5My6jlB-FBS1pw?pwd=sirr) `(pwd:sirr)`].  
 
@@ -214,4 +214,4 @@ If our work is useful for your research, please consider citing:
 
 # :heart: Contact
 
-If you have any questions, please feel free to reach me out at [`songzb@njust.edu.cn`](mailto:songzb@njust.edu.cn) or [`zyzhang.bbetter@gmail.com`](mailto:zyzhang.bbetter@gmail.com).
+If you have any questions, please feel free to reach out at [`songzb@njust.edu.cn`](mailto:songzb@njust.edu.cn) or [`zyzhang.bbetter@gmail.com`](mailto:zyzhang.bbetter@gmail.com).
