@@ -174,6 +174,8 @@ CUDA_VISIBLE_DEVICES=0 python test.py --name ours_cvpr --hyper --gpu_ids 0 -r --
 
 ```shell
 # To Be Released
+# Due to confidentiality concerns. Alternatively, you can refer to https://github.com/yuyi-sd/Robust_Rain_Removal
+
 ```
 
 # :relaxed: Results
@@ -191,6 +193,7 @@ CUDA_VISIBLE_DEVICES=0 python test.py --name ours_cvpr --hyper --gpu_ids 0 -r --
 
 If our work is useful for your research, please consider citing:
 
+```
 @InProceedings{Song_2023_CVPR,
     author    = {Song, Zhenbo and Zhang, Zhenyuan and Zhang, Kaihao and Luo, Wenhan and Fan, Zhaoxin and Ren, Wenqi and Lu, Jianfeng},
     title     = {Robust Single Image Reflection Removal Against Adversarial Attacks},
@@ -199,12 +202,13 @@ If our work is useful for your research, please consider citing:
     year      = {2023},
     pages     = {24688-24698}
 }
+```
 
 # :sparkles: Acknowledgement
 
 - This project is based on [ERRNet](https://github.com/Vandermode/ERRNet)
 
-- Some codes are brought from [BasicSR](https://github.com/XPixelGroup/BasicSR)
+- Some codes are brought from [BasicSR](https://github.com/XPixelGroup/BasicSR), [Robust_Rain_Removal](https://github.com/yuyi-sd/Robust_Rain_Removal)
 
 - This Readme is inspired by [CodeFormer](https://github.com/sczhou/CodeFormer) and [FedFed](https://github.com/visitworld123/FedFed)
 
