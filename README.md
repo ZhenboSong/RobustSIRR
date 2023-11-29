@@ -6,12 +6,12 @@
     <a href="https://cvpr2023.thecvf.com/Conferences/2023"><img src="https://img.shields.io/badge/Pub-CVPR'23-olive" alt="Pub">
     </a>
     <a href="https://github.com/">
-    <img src= "https://badgen.net/github/stars/visitworld123/FedFed">
+    <img src= "https://badgen.net/github/stars/ZhenboSong/RobustSIRR">
     </a>
     <!-- <a href="https://github.com/">
     <img src="https://img.shields.io/badge/-github-teal?logo=github" alt="github">
     </a> -->
-    <a href="https://github.com/visitworld123/FedFed/blob/main/LICENSE"><img src="https://img.shields.io/github/license/visitworld123/FedFed?color=yellow" alt="License">
+    <a href="https://github.com/ZhenboSong/RobustSIRR/blob/main/LICENSE"><img src="https://img.shields.io/github/license/visitworld123/FedFed?color=yellow" alt="License">
     </a>
     <img src="https://badges.toozhao.com/badges/01HGAHWS6R0ZF6559D8ZWYKF9S/blue.svg" alt="Count">
 </p>
