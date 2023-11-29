@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 ## :one: Download Pre-trained Models
 
-- Download the pre-trained RobustSIRR models from [[Pre-trained_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1Q0ghK9UqiC4vMN9D75Gs3g?pwd=sirr) `(pwd:sirr)`] to the `checkpoints` folder. 
+:star2: Download the pre-trained RobustSIRR models from [[Pre-trained_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1Q0ghK9UqiC4vMN9D75Gs3g?pwd=sirr) `(pwd:sirr)`] to the `checkpoints` folder. 
 
 ## :two: Prepare Dataset
 
