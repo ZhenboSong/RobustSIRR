@@ -1,4 +1,4 @@
-<img src="assets/head.png" width="800px"/>
+<img src="assets/head.png"/>
 
 <p align="center">
     <!-- <a href="https://arxiv.org/abs/2310.05077">
@@ -24,29 +24,28 @@ Zhenbo Song *, Zhenyuan Zhang *, [Kaihao Zhang](https://zhangkaihao.github.io/),
 
 **Abstracts**: This paper addresses the problem of robust deep single-image reflection removal (SIRR) against adversarial attacks. Current deep learning based SIRR methods have shown significant performance degradation due to unnoticeable distortions and perturbations on input images. For a comprehensive robustness study, we first conduct diverse adversarial attacks specifically for the SIRR problem, i.e. towards different attacking targets and regions. Then we propose a robust SIRR model, which integrates the cross-scale attention module, the multi-scale fusion module, and the adversarial image discriminator. By exploiting the multi-scale mechanism, the model narrows the gap between features from clean and adversarial images. The image discriminator adaptively distinguishes clean or noisy inputs, and thus further gains reliable robustness. Extensive experiments on Nature, SIR<sup>2</sup>, and Real datasets demonstrate that our model remarkably improves the robustness of SIRR across disparate scenes. 
 
-<img src="assets/pipeline.png" width="800px"/>
+<img src="assets/pipeline.png"/>
 
-:star2: If RobustSIRR is helpful to your images or projects, please help star this repo. Thanks! :hugs: 
+<p align="center">:star2: If RobustSIRR is helpful to your images or projects, please help star this repo. Thanks! :hugs:</p>
 
 
 # The Table of Contents
-- [The Table of Contents](#the-table-of-contents)
-- [Dependencies and installation](#dependencies-and-installation)
-- [How to run](#how-to-run)
-  - [Download Pre-trained Models](#download-pre-trained-models)
-  - [Prepare Dataset](#prepare-dataset)
+- [:house: Dependencies and installation](#house-dependencies-and-installation)
+- [:clap: How to run](#clap-how-to-run)
+  - [:one: Download Pre-trained Models](#one-download-pre-trained-models)
+  - [:two:Prepare Dataset](#two-prepare-dataset)
     - [Training Dataset](#training-dataset)
     - [Testing Dataset](#testing-dataset)
     - [Dataset Architectures](#dataset-architectures)
-  - [Train](#train)
-  - [Test](#test)
-  - [Evaluate the Robustness of Our model on All dataset](#evaluate-the-robustness-of-our-model-on-all-dataset)
-- [Results](#results)
-- [Citation](#citation)
-- [Acknowledgement](#acknowledgement)
-- [Contact](#contact)
+  - [:three: Train](#three-train)
+  - [:four: Test](#four-test)
+  - [:five: Evaluate the Robustness of Our model on All dataset](#five-evaluate-the-robustness-of-our-model-on-all-dataset)
+- [:relaxed: Results](#relaxed-results)
+- [:fire: Citation](#fire-citation)
+- [:sparkles: Acknowledgement](#sparkles-acknowledgement)
+- [:heart: Contact](#heart-contact)
 
-# Dependencies and installation
+# :house: Dependencies and installation
 
 - Python >= 3.8.5
 - PyTorch >= 1.11
@@ -66,13 +65,13 @@ conda activate sirr
 pip install -r requirements.txt
 ```
 
-# How to run
+# :clap: How to run
 
-## Download Pre-trained Models
+## :one: Download Pre-trained Models
 
 - Download the pre-trained RobustSIRR models from [[Pre-trained_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1Q0ghK9UqiC4vMN9D75Gs3g?pwd=sirr) `(pwd:sirr)`] to the `checkpoints` folder. 
 
-## Prepare Dataset
+## :two: Prepare Dataset
 
 ### Training Dataset
 
@@ -91,7 +90,7 @@ pip install -r requirements.txt
 
 :exclamation:Place the processed these datasets in the `datasets` folder, and name them as `real20`, `SIR2`, and `nature20` respectively. 
 
-:star2:For convenience, you can directly download the prepared testing dataset from [ [TestingDataset_For_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1inDlzc9u5My6jlB-FBS1pw?pwd=sirr) `(pwd:sirr)`]分享. 
+:star2:For convenience, you can directly download the prepared testing dataset from [ [TestingDataset_For_RobustSIRR_BaiduYunDisk](https://pan.baidu.com/s/1inDlzc9u5My6jlB-FBS1pw?pwd=sirr) `(pwd:sirr)`].  
 
 ### Dataset Architectures
 
@@ -136,7 +135,7 @@ Note:
 - `transmission_layer` is GT, `blended` is Input, and `reflection/reflection_layer` is the reflection part
 - For the SIR^2 dataset, we only standardize the folder structure
 
-## Train
+## :three: Train
 
 - For adv. training:
 
@@ -165,30 +164,29 @@ CUDA_VISIBLE_DEVICES=0 python train.py --name ours_wo_scm --gpu_id 0 --no-verbos
 
 - Check `options/robustsirr/train_options.py` to see more training options.
 
-## Test
+## :four: Test
 ```shell
 CUDA_VISIBLE_DEVICES=0 python test.py --name ours_cvpr --hyper --gpu_ids 0 -r --no-verbose --save_gt --save_attack --save_results
 ```
 
-## Evaluate the Robustness of Our model on All dataset
+## :five: Evaluate the Robustness of Our model on All dataset
 
 ```shell
 # To Be Released
 ```
 
-# Results
+# :relaxed: Results
 
-
-
-<img src="assets/evaluation.png" width="800px"/>
+<img src="assets/evaluation.png"/>
 
 :point_up: Comparison of the PSNR values with respect to perturbation levels $\epsilon$ for different attacks on various datasets. ‘MSE FR Nature’ represents attacking on **Full** Region with **MSE** objective on the Nature dataset, and so the others. 
 
-<img src="assets/evaltable.png" width="800px"/>
-:point_up: Comparison of different training strategies on three benchmark datasets. ‘w/’ and ‘w/o adv.’ mean training with or without adversarial images. **MSE** and **LPIPS** denote corresponding attacks over **full** regions. $\downarrow$ and $\uparrow$ represent the degradation and degradation performance compared to the original prediction inputting clean images.
+<img src="assets/evaltable.png"/>
+
+:point_up: Comparison of different training strategies on three benchmark datasets. ‘w/’ and ‘w/o adv.’ mean training with or without adversarial images. **MSE** and **LPIPS** denote corresponding attacks over **Full** regions. &#8595; and &#8593; represent the degradation and improvement performance compared to the original prediction inputting clean images.
 
 
-# Citation
+# :fire: Citation
 
 If our work is useful for your research, please consider citing:
 
@@ -201,9 +199,7 @@ If our work is useful for your research, please consider citing:
     pages     = {24688-24698}
 }
 
-
-
-# Acknowledgement
+# :sparkles: Acknowledgement
 
 - This project is based on [ERRNet](https://github.com/Vandermode/ERRNet)
 
@@ -211,6 +207,6 @@ If our work is useful for your research, please consider citing:
 
 - This Readme is inspired by [CodeFormer](https://github.com/sczhou/CodeFormer) and [FedFed](https://github.com/visitworld123/FedFed)
 
-# Contact
+# :heart: Contact
 
 If you have any questions, please feel free to reach me out at [`songzb@njust.edu.cn`](mailto:songzb@njust.edu.cn) or [`zyzhang.bbetter@gmail.com`](mailto:zyzhang.bbetter@gmail.com).
