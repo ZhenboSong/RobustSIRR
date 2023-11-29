@@ -161,6 +161,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py --name ours_wo_aff --gpu_id 0 --no-verbos
 CUDA_VISIBLE_DEVICES=0 python train.py --name ours_wo_scm --gpu_id 0 --no-verbose --display_id -1 --batchSize 4 --wo_scm
 
 ```
+Note:
 
 - Check `options/robustsirr/train_options.py` to see more training options.
 
