@@ -3,14 +3,11 @@
 <p align="center">
     <!-- <a href="https://arxiv.org/abs/2310.05077">
     <img src="https://img.shields.io/badge/arxiv-2310.05077-silver" alt="Paper"></a> -->
-    <a href="https://cvpr2023.thecvf.com/Conferences/2023"><img src="https://img.shields.io/badge/Pub-CVPR'23-olive" alt="Pub">
-    </a>
+    <a href="https://cvpr2023.thecvf.com/Conferences/2023"><img src="https://img.shields.io/badge/Pub-CVPR'23-olive" alt="Pub"></a>
     <a href="https://github.com/ZhenboSong/RobustSIRR">
-    <img src= "https://img.shields.io/github/stars/ZhenboSong/RobustSIRR">
-    </a>
-    <a href="https://github.com/ZhenboSong/RobustSIRR/blob/main/LICENSE"><img src="https://img.shields.io/github/license/visitworld123/FedFed?color=yellow" alt="License">
-    </a>
-    <img src="https://badges.toozhao.com/badges/01HGAHWS6R0ZF6559D8ZWYKF9S/blue.svg" alt="Count">
+    <img src= "https://img.shields.io/github/stars/ZhenboSong/RobustSIRR"></a>
+    <a href="https://github.com/ZhenboSong/RobustSIRR/blob/main/LICENSE"><img src="https://img.shields.io/github/license/visitworld123/FedFed?color=yellow" alt="License"></a>
+    <img style="border-radius:120px;width:120px;" src="https://badges.toozhao.com/badges/01HGAHWS6R0ZF6559D8ZWYKF9S/blue.svg" alt="Count">
 </p>
 
 <h1 align="center">Robust Single Image Reflection Removal Against Adversarial Attacks  (CVPR 2023)</h1>
@@ -208,6 +205,8 @@ If our work is useful for your research, please consider citing:
 - Some codes are brought from [BasicSR](https://github.com/XPixelGroup/BasicSR), [Robust_Rain_Removal](https://github.com/yuyi-sd/Robust_Rain_Removal)
 
 - This Readme is inspired by [CodeFormer](https://github.com/sczhou/CodeFormer) and [FedFed](https://github.com/visitworld123/FedFed)
+
+- For More Awesome SIRR methods, you can refer to :+1: [Awesome-SIRR](https://github.com/Liar-zzy/Awesome-Single-Image-Reflection-Removal)
 
 # :heart: Contact
 
