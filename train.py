@@ -41,7 +41,7 @@ train_dataset_fusion = datasets.FusionDataset([train_dataset_voc, train_dataset_
 
 train_dataloader_fusion = datasets.DataLoader(
     train_dataset_fusion, batch_size=opt.batchSize, shuffle=True, 
-    num_workers=opt.nThreads, pin_memory=True)
+    num_workers=opt.nThreads, pin_memory=True, drop_last=True)
 
 """Main Loop"""
 engine = Engine(opt)
