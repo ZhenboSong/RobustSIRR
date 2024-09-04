@@ -3,7 +3,7 @@
 <p align="center">
     <!-- <a href="https://arxiv.org/abs/2310.05077">
     <img src="https://img.shields.io/badge/arxiv-2310.05077-silver" alt="Paper"></a> -->
-    <a href="https://cvpr2023.thecvf.com/Conferences/2023"><img src="https://img.shields.io/badge/Pub-CVPR'23-olive" alt="Pub"></a>
+    <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Song_Robust_Single_Image_Reflection_Removal_Against_Adversarial_Attacks_CVPR_2023_paper.pdf"><img src="https://img.shields.io/badge/Pub-CVPR'23-olive" alt="Pub"></a>
     <a href="https://github.com/ZhenboSong/RobustSIRR">
     <img src= "https://img.shields.io/github/stars/ZhenboSong/RobustSIRR"></a>
     <a href="https://github.com/ZhenboSong/RobustSIRR/blob/main/LICENSE"><img src="https://img.shields.io/github/license/visitworld123/FedFed?color=yellow" alt="License"></a>
